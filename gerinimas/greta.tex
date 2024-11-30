@@ -1,0 +1,177 @@
+\begin{sritiesGerinimas}{Requirements Management}
+    \vertinimas{0}{1}
+    \veiksmas{
+        \begin{tiksloGerinimas}{REQM.SG 1 Manage Requirements}
+        \vertinimas{Unsatisfied}{Satisfied}
+        \veiksmas{
+            \begin{praktikosGerinimas}{REQM.SP 1.1. Understand Requirements}
+                \vertinimas{PI}{LI}
+                \veiksmas{Sukuriamas naujas produktas: 
+                \hspace*{1cm}\newline Id:
+                \hladd{KR}
+                \hspace*{1cm}\newline Pavadinimas:
+                \hladd{Kliento reikalavimai projektui}
+                \hspace*{1cm}\newline Aprašymas:
+                \hladd{
+                Kliento pusėje suprojektuoti reikalavimai projektui, kurie apibrėžia detales, kaip kliento poreikiai projektui (KP) turėtų būti išpildyti projekte. 
+
+                Kliento poreikių projektui (KP) dokumentas apima techninius, kokybinius, ir veikimo reikalavimus, reikalingus projekto sėkmei užtikrinti. 
+                %Reikalavimų kokybės vertinimo kriterijaii!!! Sudaroma atsekamumo matrica. %\
+
+                %Reikalavimų valdymas: tiesiog naują proc reiks padaryti%
+                }
+                
+                }
+
+                \veiksmas{Pridėti produktą prie Kliento įtraukimas (KĮ) proceso "Panaudoti darbo produktai" skilties }
+                \veiksmas{Kliento įtraukimo (KĮ) procese pakeisti 1. veiklą ją išdėstant taip:  
+
+
+                Projektų vadovas, architektas ir analitikas bendrauja su klientu, aiškinasi jo poreikius projektui
+                (KP)  
+                \hladd {ir kliento reikalavimus projektui (KR)}
+                . Ši veikla tęsiasi tol, kol įmonės atstovai surenka pakankamai informacijos paruošti klientui
+                pasiūlymą}
+                
+
+                \veiksmas{Kliento įtraukimo (KĮ) procese pakeisti 2. veiklą ją išdėstant taip:
+                
+                Projektų vadovas, architektas ir analitikas paruošia pradinę projekto viziją tam, kad būtų patvirtintas projekto įgyvendinamumas ir suderinta bendra projekto kryptis su SŠ. Jie taip pat atlieka
+                pagrįstumo analizę, siekdami įvertinti, ar kliento poreikiai (KP) \hladd{ir kliento reikalavimai produktui (KR)} yra įgyvendinami.}
+
+                \veiksmas{Kliento įtraukimo (KĮ) procese pakeisti 5. veiklą ją išdėstant taip:
+
+                Klientui yra pateikiama sutartis (KS). Jei klientas yra patenkintas sutarties sąlygomis, pereinama
+                prie sutarties pasirašymo 6. Klientas gali nesutikti su sutarties sąlygomis. Tokiu atveju vyksta
+                derybos - klientas pateikia naujus poreikius (KP) ir \hladd{ kliento reikalavimus projektui (KP), ir} dar kartą vykdoma veikla 2. Jei abi šalys
+                nesugeba rasti kompromiso, procesas gali būti nutrauktas ir darbas su klientu netęsiamas.
+                }
+                
+                \argumentacija{ Atlikus šiuos pakeitimus, proceso specifinės praktikos įvertinimas gali kilti iki \textbf{LI} įvertinimo. Išlieka trūkumas, tik toks, jog galbūt ne visoms kompanijoms tiks departamento strategija, jog kliento pusėje renkami reikalavimai nebus vertinami, bet mes įvertinome, jog tai nėra esminis trūkūmas.}
+            \end{praktikosGerinimas}
+        }
+
+
+        
+        \veiksmas{
+            \begin{praktikosGerinimas}{REQM.SP 1.2. Obtain Commitment to Requirements}
+                \vertinimas{PI}{LI}
+                \veiksmas{Sukurti naują procesą Reikalavimų valdymas (RV), jį įterpti po 2.5.4. procesu ir įdėti į procesų aprašyumo BPMN diagramą:
+                \hspace*{1cm}\newline Pavadinimas: \hladd{Reikalavimų valdymas}   
+                \hspace*{1cm}\newline Sutrumpinimas: \hladd{RV}
+                \hspace*{1cm}\newline Tikslas: \hladd{Sekti funkcinių ir nefunkcinių reikalavimų pokyčius ir kokybę.}
+                \hspace*{1cm}\newline Panaudoti darbo produktai: 
+                \hladd{
+                    
+                    • FR. Funkciniai reikalavimai
+                    
+                    • NFR. Nefunkciniai reikalavimai
+                    
+                    • GRR. Grįžtamojo ryšio registras
+
+                    • RVP. Rizikų valdymo planas
+                    
+                }
+                \hspace*{1cm}\newline Sukurti darbo produktai: \hladd{
+                
+                    • FR. Funkciniai reikalavimai
+                    
+                    • NFR. Nefunkciniai reikalavimai
+                    
+                    • GRR. Grįžtamojo ryšio registras
+                
+                }
+                \hspace*{1cm}\newline Veiklos: \hladd{
+
+                1.Architektas ir analitikas pagal grįžtamojo darbo registrą (GRR) apmąsto, kaip gali keistis funkciniai reikalavimai (FR) ir nefunkciniai reikalavimai (NFR). 
+                
+                2.Pagal rizikų valdymo planą (RVP) įvertina reikalavimų pokyčių rizikas. 
+                
+                3. Klientai informuojami apie rizikas. Komandos nariai išklauso SŠ atsiliepimus apie rizikas ir  projekto vadovas surašo surinktus atisiliepimus į grįžtamojo ryšio registrą (GRR). 
+
+                4. Architektas ir analitikas Pakeičia funkcinius reikalavimai (FR) ir nefunkcinius reikalavimus (NFR). Jų pokyčiai ir pokyčių priežastys užregistruojami ir laikomi "Jira" platformoje.
+                
+                5.Architektas ir analitikas sudaro atsekamumo matricą funkcinių reikalavimų (FR) ir nefunkcinių reikalavimų (NFR) pokyčių kokybei užtikrinti. Jei trūkumų yra, vėl vykdoma 3 ir 4 veikla.
+                
+                6.Projektų vadovas įvertina ar funkcinių reikalavimų (FR) ir nefunkcinių reikalavimų (NFR) pokyčiai gali pakeisti procesuose esančius darbo produktus ir veiklas, jei gali, jie yra pakeičiami.
+                }
+                }
+                \argumentacija{ Atlikus šiuos pakeitimus, proceso specifinės praktikos įvertinimas gali kilti iki \textbf{LI} įvertinimo. Išlieka trūkumas, tik toks, jog nėra vykdomos derybos dėl departamente paskirstytų išteklių.}
+            \end{praktikosGerinimas}
+        }
+
+
+        
+        \veiksmas{
+            \begin{praktikosGerinimas}{REQM.SP 1.3 Manage Requirements Changes}
+                \vertinimas{PI}{FI}
+                 \argumentacija{Atlikus -REQM.SP 1.2. Obtain Commitment to Requirements specifiniai praktikai pagerinti reikalingus veiksmus, proceso specifinės praktikos įvertinimas gali kilti iki \textbf{FI} įvertinimo. Išlieka trūkumas, tik toks, jog nėra vykdomos derybos dėl departamente paskirstytų išteklių.}
+            \end{praktikosGerinimas}
+        }
+
+
+        \veiksmas{
+            \begin{praktikosGerinimas}{REQM.SP 1.4 Maintain Bidirectional Traceability of Requirements}
+                \vertinimas{NI}{LI}
+                \argumentacija{Atlikus -REQM.SP 1.2. Obtain Commitment to Requirements specifiniai praktikai pagerinti reikalingus veiksmus, proceso specifinės praktikos įvertinimas gali kilti iki \textbf{LI} įvertinimo. Išlieka trūkumas, tik toks, jog sekami žemesnio ir aukštesnio lygio reikalavimai, mes įvertinom, jog tai nėra esminis pokytis pasiekti LI.}
+            \end{praktikosGerinimas}
+        }
+
+
+
+        \veiksmas{
+            \begin{praktikosGerinimas}{REQM.SP 1.5 Ensure Alignment Between Project Work and Requirements}
+                \vertinimas{NI}{FI}
+                \argumentacija{
+                    Atlikus -REQM.SP 1.2. Obtain Commitment to Requirements specifiniai praktikai pagerinti reikalingus veiksmus, proceso specifinės praktikos įvertinimas gali kilti iki \textbf{FI} įvertinimo. 
+                }
+            \end{praktikosGerinimas}
+        }
+
+        
+        \argumentacija{
+            Atlikus šiuos pakeitimus, visos specifinio tikslo praktikos turės įvertinimą ≥ LI, o likę nustatyti trūkumai
+            (nėra vykdomos derybos dėl papildomų išteklių, reikalavimai nėra skirstomi į žemesnio lygio reikalavimus) neturės esminio poveikio. Todėl specifinis tikslas laikomas pasiektu (\textbf{Satisfied}).
+        }
+        \end{tiksloGerinimas}
+    }
+    \argumentacija{
+        Atlikus šiuos pakeitimus, visi Requirement Management specifiniai    tikslai bus įvertinti kaip \textbf{Satisfied}, todėl
+        proceso srities gebėjimo lygis pakils iki 1.
+    }
+\end{sritiesGerinimas}
+
+
+
+
+
+
+
+
+
+
+
+% \begin{sritiesGerinimas}{Process and Product Quality Assurance}
+%     \vertinimas{0}{1}
+%     \veiksmas{
+%         \begin{tiksloGerinimas}{PPQA.SG 1 Objectively Evaluate Processes and Work Products}
+%         \vertinimas{Unsatisfied}{Satisfied}
+%         \veiksmas{
+%             \begin{praktikosGerinimas}{PPQA.SP 1.1 Objectively Evaluate Processes}
+%                 \vertinimas{NI}{LI}
+%                 \veiksmas{Citata, kuri eina i pagerinta procesu doc'a}
+%                 \argumentacija{Praktika pagerinta args.}
+%             \end{praktikosGerinimas}
+%         }
+%         \veiksmas{
+%             \begin{praktikosGerinimas}{PPQA.SP 1.2 Objectively Evaluate Work Products}
+%                 \vertinimas{NI}{LI}
+%                 \veiksmas{Citata, kuri eina i pagerinta procesu doc'a}
+%                 \argumentacija{Praktika pagerinta args.}
+%             \end{praktikosGerinimas}
+%         }
+%         \argumentacija{Tikslo pagerinimo argumentacija}
+%         \end{tiksloGerinimas}
+%     }
+%     \argumentacija{Srities pagerinimo argumentacija}
+% \end{sritiesGerinimas}

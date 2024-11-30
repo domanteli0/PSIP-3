@@ -1,0 +1,65 @@
+\documentclass{article}
+\usepackage[T1]{fontenc}
+\usepackage[lithuanian]{babel}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{float} % For accuratelly placing images
+\usepackage[a4paper, margin=2cm]{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage{pdflscape}
+\usepackage{longtable}
+\usepackage{xltabular}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{etoolbox}
+
+
+% For striketrghough
+\usepackage{soul}
+
+% For colored highlights 
+\usepackage{xcolor}
+
+% BEGIN: FOR SVG
+% \usepackage[inkscapelatex=false]{svg}
+\usepackage{svg}
+\usepackage{amsmath}
+% END: FOR SVG
+
+\usepackage{everypage}
+\usepackage{lscape} % Ensure landscape pages are recognized
+\usepackage{lipsum}
+
+\newcommand{\subsubsubsection}[1]{\paragraph{#1}\mbox{}\\}
+\newcommand{\hladd}[1]{\sethlcolor{lime}\hl{#1}}
+\newcommand{\hlremove}[1]{\sethlcolor{pink}\hl{#1}}
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{3}
+
+\title{
+    Įmonės „PTN“ procesų vertinimas\\
+    \large pagal „CMMI-DEV“ modelį ir gerinimas\\ 
+    \large versija 1.0 \\
+    \large Komanda „PTN“}
+\author{
+    Greta Virpšaitė \\
+    Rugilė Vasaitytė \\
+    Domantas Keturakis \\
+    Arnas Vaicekauskas \\
+    \textbf{Liudas Kasperavičius (Lyderis)} 
+}
+\date{Lapkritis 2024}
+
+\begin{document}
+\include{commands}
+
+\maketitle
+
+\newpage
+\tableofcontents
+
+\include{pasiruosimas}
+\include{vertinimas}
+\include{gerinimas}
+
+\end{document}

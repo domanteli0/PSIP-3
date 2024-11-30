@@ -1,0 +1,106 @@
+\begin{sritiesGerinimas}{Configuration Management}
+    \vertinimas{0}{1}
+    \veiksmas{
+        \begin{tiksloGerinimas}{CM.SG 1 Establish Baselines}
+        \vertinimas{Unsatisfied}{Satisfied}
+        \veiksmas{
+            \begin{praktikosGerinimas}{CM.SP 1.2 Establish a Configuration Management System}
+                \vertinimas{NI}{LI}
+                \veiksmas{
+                    Pridėti naują darbo produktą: 
+                    \hladd{
+                        \textbf{KFR} -- Konfigūracinių Failų Repozitorija. Čia laikomi produkto konfigūraciniai failai. Pagrindinė šios repozitorijos šaka atitinka bazinę produkto konfigūraciją.
+                    }
+                }
+                \veiksmas{
+                    Aplinkos rengimo (AR) procese pridėti veiklą: 
+                    \hladd{
+                        Architektas sukuria produkto konfigūracinių failų repozitoriją (KFR) ir parengia ją naudojimui.
+                    }
+                }
+                \argumentacija{Šie pakeitimai užtikrins, jog konfigūracijos valdymas yra atskirtas nuo kodo ir atitinka 3--9 detaliąsias praktikas pasirinktai konfigūracijos valdymo strategijai. Tačiau išlieka autorizacijos lygių atskyrimo trūkumas, todėl specifinės praktikos įvertinimas keliamas iki \textbf{\PraktikosNew}.}
+            \end{praktikosGerinimas}
+        }
+        \argumentacija{Atlikus pakeitimus, visos specifinės praktikos įgyja \textbf{LI} įvertinimą, o trūkumai (neatskirti kontrolės lygiai ir nesudaryta CCB) nedaro esminio poveikio specifiniam tikslui. Todėl specifinis tikslas laikomas pasiektu (\textbf{\TiksloNew})}
+        \end{tiksloGerinimas}
+    }
+    \veiksmas{
+        \begin{tiksloGerinimas}{CM.SG 2 Track and Control Changes}
+        \vertinimas{Unsatisfied}{Satisfied}
+        \veiksmas{
+            \begin{praktikosGerinimas}{CM.SP 2.2 Control Configuration Items}
+                \vertinimas{LI}{FI}
+                \veiksmas{
+                    Aplinkos rengimo (AR) procese pridėti veiklą: 
+                    \hladd{
+                        Architektas užtikrina, jog konfigūracinių failų repozitorijos (KFR) pagrindinė šaka būtų atnaujinama tik kai pakeitimą patvirtina Projekto Vadovas.
+                    }
+                }
+                \argumentacija{Po šio pakeitimo naują bazinę konfigūraciją turės patvirtinti (autorizuoti) Projekto Vadovas, įsitikinęs, jog su šiuo pakeitimu sutinka visos SŠ, todėl specifinės praktikos įvertinimas pakils iki \textbf{\PraktikosNew}.}
+            \end{praktikosGerinimas}
+        }
+        \argumentacija{Atlikus pakeitimus, konfigūracijos valdymas bus pakankamai kontroliuojamas, jog likę trūkumai (nepakankamas pakeitimų matomumas visoms SŠ) nebūtų esminiai. Todėl specifinis tikslas laikomas pasiektu (\textbf{\TiksloNew}).}
+        \end{tiksloGerinimas}
+    }
+    \veiksmas{
+        \begin{tiksloGerinimas}{CM.SG 3 Establish Integrity}
+        \vertinimas{Unsatisfied}{Satisfied}
+        \veiksmas{
+            \begin{praktikosGerinimas}{CM.SP 3.1 Establish Configuration Management Records}
+                \vertinimas{NI}{LI}
+                \argumentacija{\\
+                    Atlikus aukščiau \ref{sec:gerinimas:Configuration Management} aprašytus pakeitimus, įgyvendinamos visos \Name~detaliosios praktikos, išskyrus pakankamą konfigūracijos valdymo matomumą visoms SŠ, todėl specifinė praktika įgyja \textbf{\PraktikosNew} įvertinimą.
+                }
+            \end{praktikosGerinimas}
+        }
+        \veiksmas{
+            \begin{praktikosGerinimas}{CM.SP 3.2 Perform Configuration Audits}
+                \vertinimas{NI}{FI}
+                \veiksmas{Sukurti naują periodiškai iki projekto pabaigos vykstantį procesą \hladd{Projekto Konfigūracijos Auditas (KAU)} ir jame pridėti toliau išdėstytas veiklas.}
+                \veiksmas{\hladd{
+                    Palyginama konfigūracijos repozitorijoje (KFR) esanti bazinė konfigūracija su techninėje dokumentacijoje (TD) aprašyta konfigūracija.
+                }}
+                \veiksmas{\hladd{
+                    Patikrinama, ar visi konfigūracijos nustatymai turi tinkamus identifikatorius ir yra minimi techninėje dokumentacijoje (TD).
+                }}
+                \veiksmas{\hladd{
+                    Patikrinama konfigūracijos repozitorijos (KFR) pakeitimų istorija ir užtikrinama, jog visi pakeitimai dokumentuoti ir susieti su projekto užduotimis, esančiomis projekto užduočių sąraše (PUS).
+                }}
+                \veiksmas{\hladd{
+                    Jei rasta neatitikimų, jie užregistruojami kaip atskiros užduotys projekto užduočių sąraše (PUS).
+                }}
+                \argumentacija{Atlikus šiuos pakeitimus bus atliekamas konfigūracijos auditas pritaikytas pasirinktai konfigūracijos valdymo strategijai ir išpildantis detaliąsias praktikas. Todėl specifinė praktika įgyja \textbf{\PraktikosNew} įvertinimą.}
+            \end{praktikosGerinimas}
+        }
+        \argumentacija{Atlikus pakeitimus, visų tikslo specifinių praktikų įvertinimai bus $\ge$ \textbf{LI}, o likę trūkumai (nepakankamas konfigūracijos valdymo matomumas visoms SŠ) nedarys esminio poveikio specifiniam tikslui. Todėl specifinis tikslas laikomas pasiektu (\textbf{\TiksloNew}).}
+        \end{tiksloGerinimas}
+    }
+    \argumentacija{Atlikus šiuos pakeitimus, visi \Name~specifiniai tikslai bus įvertinti kaip \textbf{Satisfied}, todėl proceso srities gebėjimo lygis pakils iki \textbf{\SritiesNew}}
+\end{sritiesGerinimas}
+% -------------------------------------------------------------------------------
+\begin{sritiesGerinimas}{Product Integration}
+    \vertinimas{0}{1}
+    \veiksmas{
+        \begin{tiksloGerinimas}{PI.SG 2 Ensure Interface Compatibility}
+        \vertinimas{Unsatisfied}{Satisfied}
+        \veiksmas{
+            \begin{praktikosGerinimas}{PI.SP 2.1 Review Interface Descriptions for Completeness}
+                \vertinimas{PI}{FI}
+                \veiksmas{
+                    Pridėti veiklą Kontrolės (KO) procese: 
+                    \hladd{
+                        Architektas peržiūri techninėje dokumentacijoje (\textit{TD}) aprašytas vidines ir išorines produkto (\textit{PROD}) sąsajas ir, jei reikia, atnaujina projekto užduočių sąrašą (\textit{PUS}) pridėdamas į jį reikalingas sąsajų atnaujinimo veiklas.
+                    }
+                }
+                \argumentacija{
+                    Po šio pakeitimo architektas periodiškai peržiūrės produkto sąsajas užtikrindamas jų pilnumą ir jų apibrėžimų korektiškumą. Trūkumų nelieka, todėl šios specifinės praktikos įvertinimas pakyla iki \textbf{\PraktikosNew}.
+                }
+            \end{praktikosGerinimas}
+        }
+        \argumentacija{
+            Atlikus šiuos pakeitimus, visos specifinio tikslo praktikos turės įvertinimą $\ge$ \textbf{LI}, o likę nustatyti trūkumai (sąsajų suderinamumo užtikrinimas tik \textit{SDLC}, o ne \textit{SLC} metu) neturės esminio poveikio.
+        }
+        \end{tiksloGerinimas}
+    }
+    \argumentacija{Atlikus šiuos pakeitimus, visi \Name~specifiniai tikslai bus įvertinti kaip \textbf{Satisfied}, todėl proceso srities gebėjimo lygis pakils iki \textbf{\SritiesNew}}
+\end{sritiesGerinimas}

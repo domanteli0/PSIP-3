@@ -1,0 +1,76 @@
+\newcommand{\showListItem}[1]{\item #1}
+
+\newenvironment{sritiesGerinimas}[1]
+{
+% Exposed commands
+\newcommand{\vertinimas}[2]{\gdef\SritiesOld{##1} \gdef\SritiesNew{##2}}
+\newcommand{\veiksmas}[1]{\listgadd{\SritiesVeiksmai}{##1}}
+\newcommand{\argumentacija}[1]{\gdef\SritiesArgumentacija{##1}}
+
+% Internal defs
+
+\def\Name{#1}
+\def\SritiesOld{}
+\def\SritiesNew{}
+\def\SritiesVeiksmai{}
+\def\SritiesArgumentacija{}
+
+% Beginning
+\subsubsection{\Name}\label{sec:gerinimas:\Name}
+}{
+% Ending
+Keliamas \textit{\Name}~gebėjimo lygis: \textbf{\SritiesOld} $\rightarrow$ \textbf{\SritiesNew}
+\begin{itemize}
+    \forlistloop{\showListItem}{\SritiesVeiksmai}
+\end{itemize}
+\SritiesArgumentacija{}
+}
+
+\newenvironment{tiksloGerinimas}[1]
+{
+% Exposed commands
+\renewcommand{\vertinimas}[2]{\gdef\TiksloOld{##1} \gdef\TiksloNew{##2}}
+\renewcommand{\veiksmas}[1]{\listgadd{\TiksloVeiksmai}{##1}}
+\renewcommand{\argumentacija}[1]{\gdef\TiksloArgumentacija{##1}}
+
+% Internal defs
+
+\def\Name{#1}
+\def\TiksloOld{}
+\def\TiksloNew{}
+\def\TiksloVeiksmai{}
+\def\TiksloArgumentacija{}
+% Beginning
+}{
+% Ending
+\textit{\Name}~specifinis tikslas: \textbf{\TiksloOld} $\rightarrow$ \textbf{\TiksloNew}
+\begin{itemize}
+    \forlistloop{\showListItem}{\TiksloVeiksmai}
+\end{itemize}
+\TiksloArgumentacija{}
+}
+
+\newenvironment{praktikosGerinimas}[1]
+{
+% Exposed commands
+\renewcommand{\vertinimas}[2]{\gdef\PraktikosOld{##1} \gdef\PraktikosNew{##2}}
+\renewcommand{\veiksmas}[1]{\listgadd{\PraktikosVeiksmai}{##1}}
+\renewcommand{\argumentacija}[1]{\gdef\PraktikosArgumentacija{##1}}
+% Internal defs
+
+\def\Name{#1}
+\def\PraktikosOld{}
+\def\PraktikosNew{}
+\def\PraktikosVeiksmai{}
+\def\PraktikosArgumentacija{}
+% Beginningme
+}{
+% Ending
+\textit{\Name}~specifinė praktika: \textbf{\PraktikosOld} $\rightarrow$ \textbf{\PraktikosNew}
+\ifdefempty{\PraktikosVeiksmai}{\\}{
+\begin{itemize}
+    \forlistloop{\showListItem}{\PraktikosVeiksmai}
+\end{itemize}
+}
+\PraktikosArgumentacija{}
+}

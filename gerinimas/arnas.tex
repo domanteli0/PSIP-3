@@ -1,0 +1,154 @@
+% RD
+\begin{sritiesGerinimas}{Requirements Development}
+    \vertinimas{0}{1}
+    \veiksmas{
+        \begin{tiksloGerinimas}{RD.SG 2 Develop Product Requirements}
+        \vertinimas{Unsatisfied}{Satisfied}
+        \veiksmas{
+            \begin{praktikosGerinimas}{RD.SP 2.3 Identify Interface Requirements}
+                \vertinimas{NI}{FI}
+                \veiksmas{
+                    Reikalavimų analizės (RA) procese pridėti naują veiklą:
+                    \hladd {
+                        Analitikas identifikuoja išorines sąsajas su kuriomis turės komunikuoti kuriama sistema. 
+                    }
+                }
+                \veiksmas{
+                    Reikalavimų analizės (RA) procese pridėti naują veiklą:
+                    \hladd{
+                        Architektas analizuoja identifikuotas išorines sąsajas ir rašo (ISD). 
+                    }
+                }
+                \veiksmas{
+                    Pridėti naują darbo produktą:
+                    \hladd{
+                        \textbf{ISD} - Išorinių Sąsajų Dokumentacija. Šioje dokumentacijoje yra aprašyta visos aktualios išorinių sąsajų techninės detalės, kurių gali prireikti kuriant integracija su šiomis sąsajomis.
+                    }
+                }
+                \veiksmas{
+                    Reikalavimų analizės (RA) procese atnaujinti veiklą (2):
+                    \hladd{
+                        Architektas ir analitikas apibrėžia funkcinius (FR) ir nefunkcinius reikalavimus (NFR) iš identifikuotų naudotojų poreikių, modeliuojamų verslo procesų, projekto apimties (PA) ir identifikuotų išorinių sąsajų.
+                    }
+                }
+                \veiksmas{
+                    Įgyvendinimo (ĮG) atnaujinti veiklą (5):
+                    \hladd{
+                        Kiekvienas programinės įrangos kūrėjas rašo kodą, jei prireikia, naudoja išorinių sąsajų dokumentaciją (ISD), kad įgyvendintų priskirtą užduotį ir taip papildo programinį kodą (PK).
+                    }
+                }
+                \argumentacija{Šie pakeitimai užtikrins, kad analizės metu informacija apie išorines sąsajas bus surinkta ir panaudota.}
+            \end{praktikosGerinimas}
+        }
+        \argumentacija{
+            Atlikus pakeitimus, reikalavimų rengimas bus pakankamai kontroliuojamas, jog likę trūkumai (reikalavimų priklausomybių neatnaujinimas keičiantis reikalavimams) nebūtų esminiai. Todėl specifinis tikslas laikomas pasiektu (\textbf{Satisfied})
+        }
+        \end{tiksloGerinimas}
+    }
+    \veiksmas{
+        \begin{tiksloGerinimas}{RD.SG 3 Analyze and Validate Requirements}
+        \vertinimas{Unsatisfied}{Satisfied}
+        \veiksmas{
+            \begin{praktikosGerinimas}{RD.SP 3.3 Analyze Requirements}
+                \vertinimas{PI}{LI}
+                \veiksmas{
+                    Reikalavimų analizės (RA) procese atnaujinti veiklą (1): 
+                    \hladd{Analitikas renka informaciją iš kliento. Pagal tai modeliuoja verslo procesus ir identifikuoja konkrečius naudotojų poreikius. Jei kyla prieštaraujančių reikalavimų - sprendžia juos su atitinkamais SŠ. }
+                }
+                \veiksmas{
+                    Reikalavimų analizės (RA) procese pridėti veiklą: 
+                    \hladd{Analitikas daro analizę, bendrauja su SŠ, aiškinasi ar reikalavimų rinkinys yra pilnas ir būtinas. Jei pasirodo, kad rinkinys yra ne pilnas grįžtama prie pirmos veiklos.}
+                }
+                \veiksmas{
+                    Reikalavimų analizės (RA) procese pridėti veiklą: 
+                    \hladd{Analitikas ir architektas atlieka analizę, aiškinasi ar iškelti funkciniai (FR) ir nefunkciniai (NFR) reikalavimai yra įgyvendinami ir patikrinami. Jei pasirodo, kad rinkinyje yra neįgyvendinamų arba nepatikrinamų reikalavimų, jie yra performuluojami. }
+                }
+                \veiksmas{
+                    Reikalavimų analizės (RA) procese pridėti veiklą: 
+                    \hladd{Analitikas, architektas ir programinės įrangos kūrėjai ruošia sistemos maketą, kuris atitiktų surinktų funkcinių (FR) ir nefunkcinių (NFR) reikalavimų rinkinį. }
+                }
+                \veiksmas{
+                    Reikalavimų analizės (RA) procese pridėti veiklą: 
+                    \hladd{Analitikas ir Architektas pristato SŠ maketą, aiškinasi su SŠ ar reikalavimų rinkinys yra pakankamas. Jei SŠ turi kritinių pastabų, procesas yra kartojamas.}
+                }
+                \argumentacija{Šie pakeitimai užtikrins, kad analizės metu surinkti reikalavimai atitiktų klientų poreikius ir įgyvendins specifinės praktikos subpraktikas (1-3), tačiau išlieka trūkumai, kad nėra nustatoma, kokie techniniai indikatoriai bus sekami ir kad detalios koncepcijos yra kuriamos pabaigus vykdyti visas projekto užduotis todėl, jos negali būti analizuojamos norint atrasti naujų reikalavimų. }
+            \end{praktikosGerinimas}
+        }
+        \veiksmas{
+            \begin{praktikosGerinimas}{RD.SP 3.4 Analyze Requirements to Achieve Balance}
+                \vertinimas{PI}{LI}
+                \veiksmas{
+                   
+                }
+                \argumentacija{Praeitos specifinės praktikos gerinimas įvykdo šios specifinės praktikos sub-praktiką (1) - yra naudojami modeliai norint išgauti informaciją apie reikalavimus. Tačiau dar išlieka trūkumų: produkto gyvavimo ciklo koncepcijos nėra sudaromos, nėra analizuojamos ir architektūrą lemiančios patogumo funkcijos, jų poveikis projekto kainai ir rizika nėra analizuojamos.}
+            \end{praktikosGerinimas}
+        }
+        \veiksmas{
+            \begin{praktikosGerinimas}{RD.SP 3.5 Validate Requirements}
+                \vertinimas{NI}{LI}
+                \veiksmas{
+                   Reikalavimų analizės (RA) procese pridėti veiklą: 
+                    \hladd{Analitikas atlieka rizikos analizę. Yra analizuojama poveikis produktui, jei įgyvendinimo metu pasirodytų, kad tam tikri reikalavimai negali būti išpildyti. }
+                }
+                \argumentacija{Užpraeitos specifinės praktikos gerinimas įvykdo šios specifinės praktikos sub-praktiką (2) - kuriami sistemos prototipai. Nauja veikla užtikrina, kad rizika bus įvertinta, jei pasirodytų, kad tam tikri reikalavimai negali būti išpildyti. Išlieka trūkumas - bręstantis sistemos dizainas nėra analizuojamas reikalavimų kontekste}
+            \end{praktikosGerinimas}
+        }
+        \argumentacija{Atlikus pakeitimus, reikalavimų rengimas bus pakankamai kontroliuojamas, jog likę trūkumai nebūtų esminiai. Todėl specifinis tikslas laikomas pasiektu (\textbf{\TiksloNew}).}
+        \end{tiksloGerinimas}
+    }
+    \argumentacija{Atlikus šiuos pakeitimus, visi \Name~specifiniai tikslai bus įvertinti kaip \textbf{Satisfied}, todėl proceso srities gebėjimo lygis pakils iki \textbf{\SritiesNew}}
+\end{sritiesGerinimas}
+% -------------------------------------------------------------
+% VER
+\begin{sritiesGerinimas}{Verification}
+    \vertinimas{0}{1}
+    \veiksmas{
+        \begin{tiksloGerinimas}{VER.SG 1 Prepare for Verification}
+        \vertinimas{Unsatisfied}{Satisfied}
+        \veiksmas{
+            \begin{praktikosGerinimas}{VER.SP 1.3 Establish Verification Procedures and Criteria}
+                \vertinimas{NI}{FI}
+                \veiksmas{
+                    Kontrolės (KO) procese atnaujinti veiklą (5):
+                    \hladd{
+                        Remiantis komandos atsiliepimais, komanda ir projektų vadovas nustato komandos procesų pakeitimus, kurie įsigalioja nuo kito sprinto. Pakeitimai gali įtraukti naujas verifikacijos procedūras darbo produktams, jų priėmimo kriterijų naujinimus, kriterijų vertinimo slenkstines ribas.
+                    }
+                }
+                \argumentacija{Šie pakeitimai užtikrins, kad būtų vystomos ir palaikomos verifikavimo procedūros atitinkamiems darbo produktams.}
+            \end{praktikosGerinimas}
+        }
+        \argumentacija{Atlikus pakeitimus, pasiruošimo verifikacijai veiksmai bus pakankamai kontroliuojami, jog likę trūkumai nebūtų esminiai. Todėl specifinis tikslas laikomas pasiektu (\textbf{\TiksloNew}).}
+        \end{tiksloGerinimas}
+    }
+    \veiksmas{
+        \begin{tiksloGerinimas}{VER.SG 2 Perform Peer Reviews}
+        \vertinimas{Unsatisfied}{Satisfied}
+        \veiksmas{
+            \begin{praktikosGerinimas}{VER.SP 2.3 Analyze Peer Review Data}
+                \vertinimas{NI}{LI}
+                \veiksmas{
+                    Pridėti naują darbo produktą:
+                    \hladd{
+                        \textbf{KPR} - Kodo Peržiūros Raportas. Šiame dokumente renkama informacija apie pasiruošimą kodo peržiūrai, jos eigą ir rezultatus.
+                    }
+                }
+                \veiksmas{
+                    Įgyvendinimo (RA) procese atnaujinti veiklą (9): 
+                    \hladd{
+                        Užduotį, kuri yra IN REVIEW, kitas komandos narys peržiūri, komentuoja kodą. Tas pats komandos narys užpildo kodo peržiūros raportą (KPR).  Jeigu kitas komandos narys pareikalauja pakeitimų, pakeičia užduoties statusą į IN PROGRESS. Už užduotį atsakingas asmuo turi pakartoti 7-9 veiklas.
+                    }
+                }
+                \veiksmas{
+                    Projekto Užbaigimo (PU) procese pridėti veiklą (9): 
+                    \hladd{
+                        Analitikas atlieka kodo peržiūros raportų (KPR) analizę, identifikuoja pasikartojančias problemas ir bendro susitikimo metu jas adresuoja su kitais komandos nariais, taip prisidedama prie departamento patirties (PAT) ugdymo.
+                    }
+                }
+                \argumentacija{Šie pakeitimai užtikrins, kad kodo peržiūros duomenys yra renkami ir analizuojami.}
+            \end{praktikosGerinimas}
+        }
+        \argumentacija{Atlikus pakeitimus, peržiūros veiksmai bus pakankamai kontroliuojami, jog likę trūkumai (neužtikrinama, kad peržiūros duomenys nebūtų naudojami netinkamai) nebūtų esminiai. Todėl specifinis tikslas laikomas pasiektu (\textbf{\TiksloNew}).}
+        \end{tiksloGerinimas}
+    }
+    \argumentacija{Atlikus šiuos pakeitimus, visi \Name~specifiniai tikslai bus įvertinti kaip \textbf{Satisfied}, todėl proceso srities gebėjimo lygis pakils iki \textbf{\SritiesNew}}
+\end{sritiesGerinimas}
